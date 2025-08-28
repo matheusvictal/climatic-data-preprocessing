@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "climate-analysis"
+version = "0.1.0"
+description = "A package for obtaining, treating, visualizing and analysing basic climate data intended to be used by scientists that do not yet have experience with climatological data but want to analyse and utilize it."
+authors = ["Matheus <matheuscerqueira042@gmail.com>"]
+readme = "README.md"
+packages = [{include = "climate_analysis"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = "^1.25.2"
+netCDF4 = "^1.6.4"
+pandas = "^2.0.3"
+ipykernel = "^6.25.1"
+requests = "^2.31.0"
+xarray = "^2023.7.0"
+matplotlib = "^3.7.2"
+geopandas = "^0.13.2"
+contextily = "^1.3.0"
+geoplot = "^0.5.1"
+basemap = "^1.3.8"
+eofs = "^1.4.1"
+xeofs = "^2.3.2"
+folium = "^0.17.0"
+networkx = "^3.3"
+scikit-learn = "^1.5.0"
+scalecast = "^0.19.8"
+torch = "^2.3.1"
+lightgbm = "^4.4.0"
+xgboost = "^2.1.0"
+dtw-python = "^1.5.3"
+altair = "^5.5.0"
+pymannkendall = "^1.4.3"
+geopy = "^2.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
